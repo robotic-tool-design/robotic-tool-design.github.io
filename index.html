@@ -280,9 +280,9 @@
 			</div>
 		</div>
 		<h2 class="subtitle has-text-centered">
-			Learning curves for our framework and baselines on multi-variant and single-variant settings. We can see that across all studied tasks, our framework achieves 
-			substantially improved performance and sample efficiency. Shaded areas indicate standard error across 6 random 
-			seeds on all methods, except the <span class="dnerf">3D scoop</span> task where we use 3 seeds due to computational constraints.
+			Learning curves for our framework, prior methods, and baselines. Across all tasks, our framework
+			achieves improved performance and sample efficiency. Shaded areas indicate standard error across 6 random
+			seeds on all methods, except the <span class="dnerf">Scoop (3D)</span> task where we use 3 seeds due to computational constraints.
     </h2>
 	</div>
 </section>
@@ -403,19 +403,24 @@
 			<div class="column">
 				<img src="./resources/cutout_full.png"/>
 				<h2 class="subtitle has-text-centered is-6">
-					(a) Visualization of the goal space and zero-shot performance with a 0.6 cutout ratio.
+					(a) Initialization ranges and zero-shot performance when cutting out 60% of the area
+					of the entire possible training region.
 				</h2>
 			</div>
 			<div class="column">
 				<img src="./resources/exp_2_bullet_sofa.png"/>
 				<h2 class="subtitle has-text-centered is-6">
-					(b) Cumulative episode reward versus cutout size for policies trained with progressively larger cutout regions.
+					(b) Returns for policies
+					trained with varying relative
+					cutout region area.
 				</h2>
 			</div>
 			<div class="column">
 				<img src="./resources/exp_4_bullet_sofa.png"/>
 				<h2 class="subtitle has-text-centered is-6">
-					(c) Fine-tuning performance compared to learning from scratch across 3 target goals.
+					(c) Fine-tuning performance
+					compared to learning from
+					scratch across 4 target goals
 				</h2>
 			</div>
 
@@ -424,10 +429,9 @@
 			Interpolation results on the pushing task. In (a), we plot the success (light blue) and failure (dark blue) goal regions. 
 			Areas within the dotted yellow borders denote unseen cutout regions (interpolation). The region within the teal border 
 			(but outside cutout regions) shows the training region. The area outside the teal border is unseen during training 
-			(extrapolation). (b) and (c) show reward curves (averaged over 3 runs). Shaded regions denote standard error. In (b), 
+			(extrapolation). (b) and (c) show return curves (averaged over 3 runs). Shaded regions denote standard error. In (b), 
 			we observe that the performance for policies trained with small cutouts is close to that of the setting trained on all 
-			goals. In (c) we show evaluation performance of policies finetuned for a specific unseen goal compared to learning curves 
-			for single-task policies with those goals.
+			goals. In (c) we show that even for poses that are far away from the initial training region, our policies are able to learn to solve the task within a handful of gradient steps, and is much more effective than learning from scratch.
     </h2>
 	</div>
 </section>
