@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Learning to Design and Use Tools for Robotic Manipulation">
+  <meta name="keywords" content="Reinforcement Learning, Robotics, Tool Design">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Author Rebuttal</title>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 is-size-2 publication-title">Author Rebuttal</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+	<div class="container is-max-desktop">
+		<center><h2 class="title is-3">Additional Tasks (D5az)</h2></center>
+		<br>
+		<br>
+		<br>
+		<center><h4 class="title is-3">Open drawer</h4></center>
+        <div class="columns">
+			<div class="column">
+				<img width="500" height="500" src="./resources/bullet_drawer_opt.gif"/>
+			</div>
+			<div class="column">
+				<img src="./resources/exp_1_bullet_drawer.png"/>
+			</div>
+		</div>
+
+		<center><h4 class="title is-3">Open cabinet</h4></center>
+		<div class="columns">
+			<div class="column">
+				<img width="500" height="500" src="./resources/bullet_cabinet_opt.gif"/>
+			</div>
+			<div class="column">
+				<img src="./resources/exp_1_bullet_cabinet.png"/>
+			</div>
+		</div>
+
+		
+		<h2 class="subtitle has-text-centered">
+			Figure R1: Visualizations of learned designs and control policies (left) and training curves (right) of learned design and control policies for new <b> cabinet </b> and <b> drawer opening </b>tasks.
+            A return of 10 or above indicates task success. Error bars are computed across 2 random seeds due to computational and time constraints.
+            <br><br>
+            Top: The robot must open a cabinet that is further away than it can reach with its gripper.
+            Bottom: The robot needs to open the bottom drawer of a dresser, a common household scenario.
+            <br><br>
+    </h2>
+	</div>
+</section>
+<!-- 
+<section class="section">
+	<div class="container is-max-desktop">
+		<center><h2 class="title is-3">Final tool visualizations for compared methods (2UAy)</h2></center>
+        <br>
+		<br>
+		<br>
+
+		<div class="columns">
+			<div class="column">
+				<img src="./resources/exp_2_fetch.png"/>
+                <h2 class="subtitle has-text-centered">
+                    Ours
+				</h2>
+			</div>
+			<div class="column">
+				<img src="./resources/exp_2_fetch.png"/>
+                <h2 class="subtitle has-text-centered">
+                    Baseline 1
+				</h2>
+			</div>
+            <div class="column">
+				<img src="./resources/exp_2_fetch.png"/>           
+                <h2 class="subtitle has-text-centered">
+                    Baseline 2
+				</h2>
+			</div>
+		</div>
+		
+		<h2 class="subtitle has-text-centered">
+			Figure 2: Qualitative and quantitative results for generalization experiments on the Fetch Cube task. We train policies on a subset of initial cube positions by removing rectangular cutout regions.
+			<br>
+			<br>
+			<br>
+			<br>
+    </h2>
+	</div>
+</section>
+ -->
+
+<section class="section">
+	<div class="container is-max-desktop">
+		<center><h2 class="title is-3">Animated visualizations of tools over the course of training (2UAy)</h2></center>
+        <br>
+		<br>
+		<br>
+
+		<div class="columns">
+			<div class="column">
+				<img src="./resources/fetch_cube_timelapse_opt.gif"/>
+                <h2 class="subtitle has-text-centered">
+                    Fetch cube
+				</h2>
+			</div>
+			<div class="column">
+				<img src="./resources/drawer_timelapse_opt.gif"/>
+                <h2 class="subtitle has-text-centered">
+                    Open drawer
+				</h2>
+			</div>
+		</div>
+
+		<div class="columns">
+		
+			<div class="column">
+				<img src="./resources/cup_timelapse_opt.gif"/>
+                <h2 class="subtitle has-text-centered">
+                    Lift cup
+				</h2>
+			</div>
+            <div class="column">
+				<img src="./resources/cabinet_timelapse_opt.gif"/>           
+                <h2 class="subtitle has-text-centered">
+                    Open cabinet
+				</h2>
+			</div>
+		</div>
+
+
+		<h2 class="subtitle has-text-centered">
+			Figure R2: Evolution of tool designs and control policies for specific task goals over the course of training.
+            <br>
+			<br>
+			<br>
+			<br>
+    </h2>
+	</div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+					Website template borrowed from <a
+					href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>.
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
