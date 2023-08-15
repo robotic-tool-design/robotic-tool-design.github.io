@@ -82,7 +82,7 @@
 
 
 		<h2 class="subtitle has-text-centered">
-			Figure R1: Evolution of tool designs for specific task goals over the course of training. Note that these evolutions are visualized for shown fixed goals for the sake of visualization (designs for other goals/starting object positions converge to different tools). 
+			Figure R1: Evolution of tool designs for specific task goals over the course of training. Note that these evolutions are shown for particular goals for the sake of visualization (designs for other goals/starting object positions may converge to different tools). 
 			Due to time constraints, not all policies have fully converged in this visualization. 
 			<br>
 			<br>
@@ -148,9 +148,9 @@
 		</h1>
 
 		<h2 class="subtitle has-text-centered">
-			Figure R2: Comparison of final tool designs in the fetch cube task by our method, prior work (HWasP-minimal/Ha 2018), and the shared-architecture ablation of our method that uses PPO to jointly optimize all parameters. 
-			Note that our method is able to generate unique tools for each starting object position to solve them more efficiently. Hooked tools can pull the objects more stably, and shorter, U-shaped tools on the right can quickly pull the cube
-			out when it is not far under the overhang.
+			Figure R2: Comparison of final tool designs in the fetch cube task for our method, prior work (HWasP-minimal/Ha 2018), and the shared-architecture ablation of our method that uses PPO to jointly optimize all parameters. 
+			Note that our method is able to generate unique tools for each starting object position to solve them more efficiently. For example, sharply hooked tools can pull the objects more stably, and shorter, U-shaped tools on the right can quickly pull the cube
+			out when it is not far under the overhang (solving the task more quickly is encouraged by a slack reward term in all environments).
 			<br>
 			<br>
 			<br>
