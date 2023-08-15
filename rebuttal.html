@@ -41,6 +41,126 @@
   </div>
 </section>
 
+
+<section class="section">
+	<div class="container is-max-desktop">
+		<center><h2 class="title is-3">Animated visualizations of tools only over the course of training (2UAy)</h2></center>
+        <br>
+		<br>
+		<br>
+
+		<div class="columns">
+			<div class="column">
+				<img src="./resources/fetch_cube_tool_timelapse_opt.gif"/>
+                <h2 class="subtitle has-text-centered">
+                    Fetch cube
+				</h2>
+			</div>
+			<div class="column">
+				<img src="./resources/drawer_tool_timelapse_opt.gif"/>
+                <h2 class="subtitle has-text-centered">
+                    Open drawer
+				</h2>
+			</div>
+		</div>
+
+		<div class="columns">
+		
+			<div class="column">
+				<img src="./resources/cup_tool_timelapse_opt.gif"/>
+                <h2 class="subtitle has-text-centered">
+                    Lift cup
+				</h2>
+			</div>
+            <div class="column">
+				<img src="./resources/cabinet_tool_timelapse_opt.gif"/>           
+                <h2 class="subtitle has-text-centered">
+                    Open cabinet
+				</h2>
+			</div>
+		</div>
+
+
+		<h2 class="subtitle has-text-centered">
+			Figure R1: Evolution of tool designs for specific task goals over the course of training. Note that these evolutions are visualized for shown fixed goals for the sake of visualization (designs for other goals/starting object positions converge to different tools). 
+			Due to time constraints, not all policies have fully converged in this visualization. 
+			<br>
+			<br>
+			<br>
+			<br>
+    </h2>
+	</div>
+</section>
+
+<section class="section">
+	<div class="container is-max-desktop">
+		<center><h2 class="title is-3">Comparisons of final tools designed by ours and compared methods for varying goals (2UAy)</h2></center>
+        <br>
+		<br>
+		<br>
+
+		<div class="columns">
+			<div class="column">
+				<img src="./resources/sofa_our_1.png"/>
+    		</div>
+			<div class="column">
+				<img src="./resources/sofa_our_2.png"/>
+    		</div>
+			<div class="column">
+				<img src="./resources/sofa_our_3.png"/>
+    		</div>
+			
+		</div>
+		<h1 class="subtitle has-text-centered">
+				Ours
+		</h1>
+
+		<div class="columns">
+			<div class="column">
+				<img src="./resources/hwasp_sofa_1.png"/>
+    		</div>
+			<div class="column">
+				<img src="./resources/hwasp_sofa_2.png"/>
+    		</div>
+			<div class="column">
+				<img src="./resources/hwasp_sofa_3.png"/>
+    		</div>
+			
+		</div>
+		<h1 class="subtitle has-text-centered">
+			Hardware-as-Policy / Ha 2018	
+		</h1>
+
+		<div class="columns">
+			<div class="column">
+				<img src="./resources/ppo_sofa_1.png"/>
+    		</div>
+			<div class="column">
+				<img src="./resources/ppo_sofa_2.png"/>
+    		</div>
+			<div class="column">
+				<img src="./resources/ppo_sofa_3.png"/>
+    		</div>
+			
+		</div>
+		<h1 class="subtitle has-text-centered">
+			Ours (PPO, shared-arch)
+		</h1>
+
+		<h2 class="subtitle has-text-centered">
+			Figure R2: Comparison of final tool designs in the fetch cube task by our method, prior work (HWasP-minimal/Ha 2018), and the shared-architecture ablation of our method that uses PPO to jointly optimize all parameters. 
+			Note that our method is able to generate unique tools for each starting object position to solve them more efficiently. Hooked tools can pull the objects more stably, and shorter, U-shaped tools on the right can quickly pull the cube
+			out when it is not far under the overhang.
+			<br>
+			<br>
+			<br>
+			<br>
+    </h2>
+	</div>
+</section>
+
+
+
 <section class="section">
 	<div class="container is-max-desktop">
 		<center><h2 class="title is-3">Additional Tasks (D5az)</h2></center>
@@ -69,11 +189,11 @@
 
 		
 		<h2 class="subtitle has-text-centered">
-			Figure R1: Visualizations of learned designs and control policies (left) and training curves (right) of learned design and control policies for new <b> cabinet </b> and <b> drawer opening </b>tasks.
+			Figure R3: Visualizations of learned designs and control policies (left) and training curves (right) of learned design and control policies for new <b> cabinet </b> and <b> drawer opening </b>tasks.
             A return of 10 or above indicates task success, measured by opening the drawer or cabinet past a required point. Error bars are computed across 2 random seeds due to computational and time constraints.
             <br><br>
-            Top: The robot must open a cabinet that is further away than it can reach with its gripper.
-            Bottom: The robot needs to open the bottom drawer of a dresser, a common household scenario.
+            Top: The robot needs to open the bottom drawer of a dresser, a common household scenario.
+            Bottom: The robot must open a cabinet that is further away than it can reach with its gripper.
             <br><br>
     </h2>
 	</div>
@@ -158,7 +278,7 @@
 
 
 		<h2 class="subtitle has-text-centered">
-			Figure R2: Evolution of tool designs and control policies for specific task goals over the course of training.
+			Figure R4: Evolution of tool designs and control policies for specific task goals over the course of training.
             <br>
 			<br>
 			<br>
